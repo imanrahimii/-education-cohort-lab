@@ -1,0 +1,34 @@
+student_id,cohort,age_band,field,continued,revision
+S0000,Domestic,25+,Engineering,1,2
+S0026,Domestic,Under 25,Engineering,1,2
+S0052,Domestic,Under 25,Engineering,1,2
+S0078,Domestic,Under 25,Education,1,2
+S0104,Domestic,Under 25,Engineering,1,2
+S0130,Domestic,25+,Education,0,2
+S0156,Domestic,Under 25,Engineering,1,2
+S0182,Domestic,25+,Engineering,1,2
+S0208,Domestic,Under 25,Education,1,2
+S0234,Domestic,Under 25,Business,1,2
+S0260,Domestic,Under 25,Engineering,0,2
+S0286,Domestic,Under 25,Education,1,2
+S0312,Domestic,25+,Engineering,0,2
+S0338,Domestic,25+,Education,1,2
+S0364,Domestic,Under 25,Business,1,2
+S0390,Domestic,25+,Engineering,1,2
+S0416,International,Under 25,Engineering,1,2
+S0442,International,Under 25,Engineering,1,2
+S0468,International,25+,Business,1,2
+S0494,International,Under 25,Engineering,1,2
+S0520,International,25+,Education,1,2
+S0546,International,Under 25,Engineering,1,2
+S0572,International,Under 25,Education,0,2
+S0598,International,Under 25,Education,1,2
+S0624,International,Under 25,Business,0,2
+S0650,International,25+,Business,1,2
+S0676,International,Under 25,Education,1,2
+S0702,International,25+,Engineering,1,2
+S0728,International,Under 25,Engineering,0,2
+S0754,International,Under 25,Business,1,2
+S0780,International,Under 25,Education,1,2
+S0000,Domestic,25+,Engineering,1,2
+S0001,Domestic,Under 25,Education,1,1

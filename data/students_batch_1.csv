@@ -1,0 +1,803 @@
+student_id,cohort,age_band,field,continued,revision
+S0000,Domestic,25+,Engineering,,1
+S0001,Domestic,Under 25,Education,1,1
+S0002,Domestic,Under 25,Business,1,1
+S0003,Domestic,25+,Business,1,1
+S0004,Domestic,Under 25,Education,1,1
+S0005,Domestic,Under 25,Engineering,1,1
+S0006,Domestic,25+,Engineering,0,1
+S0007,Domestic,25+,Business,1,1
+S0008,Domestic,25+,Engineering,1,1
+S0009,Domestic,Under 25,Education,1,1
+S0010,Domestic,Under 25,Business,0,1
+S0011,Domestic,Under 25,Education,1,1
+S0012,Domestic,Under 25,Engineering,0,1
+S0013,Domestic,Under 25,Business,,1
+S0014,Domestic,25+,Business,1,1
+S0015,Domestic,25+,Business,1,1
+S0016,Domestic,25+,Engineering,1,1
+S0017,Domestic,25+,Education,1,1
+S0018,Domestic,Under 25,Business,1,1
+S0019,Domestic,Under 25,Engineering,1,1
+S0020,Domestic,25+,Engineering,1,1
+S0021,Domestic,Under 25,Education,1,1
+S0022,Domestic,Under 25,Education,1,1
+S0023,Domestic,25+,Business,0,1
+S0024,Domestic,Under 25,Education,1,1
+S0025,Domestic,25+,Education,1,1
+S0026,Domestic,Under 25,Engineering,,1
+S0027,Domestic,25+,Education,1,1
+S0028,Domestic,25+,Engineering,0,1
+S0029,Domestic,Under 25,Business,1,1
+S0030,Domestic,25+,Business,1,1
+S0031,Domestic,Under 25,Engineering,1,1
+S0032,Domestic,Under 25,Education,0,1
+S0033,Domestic,25+,Education,1,1
+S0034,Domestic,25+,Engineering,1,1
+S0035,Domestic,25+,Engineering,1,1
+S0036,Domestic,Under 25,Education,1,1
+S0037,Domestic,25+,Education,1,1
+S0038,Domestic,Under 25,Business,1,1
+S0039,Domestic,Under 25,Business,,1
+S0040,Domestic,25+,Business,1,1
+S0041,Domestic,25+,Engineering,0,1
+S0042,Domestic,25+,Education,1,1
+S0043,Domestic,25+,Education,1,1
+S0044,Domestic,Under 25,Engineering,1,1
+S0045,Domestic,25+,Education,1,1
+S0046,Domestic,25+,Engineering,1,1
+S0047,Domestic,25+,Education,1,1
+S0048,Domestic,Under 25,Business,0,1
+S0049,Domestic,Under 25,Business,1,1
+S0050,Domestic,Under 25,Business,1,1
+S0051,Domestic,Under 25,Education,0,1
+S0052,Domestic,Under 25,Engineering,,1
+S0053,Domestic,Under 25,Education,1,1
+S0054,Domestic,Under 25,Engineering,1,1
+S0055,Domestic,25+,Engineering,1,1
+S0056,Domestic,Under 25,Education,1,1
+S0057,Domestic,25+,Education,0,1
+S0058,Domestic,Under 25,Business,1,1
+S0059,Domestic,Under 25,Engineering,1,1
+S0060,Domestic,Under 25,Engineering,1,1
+S0061,Domestic,Under 25,Education,1,1
+S0062,Domestic,25+,Business,1,1
+S0063,Domestic,Under 25,Business,1,1
+S0064,Domestic,Under 25,Business,1,1
+S0065,Domestic,Under 25,Education,,1
+S0066,Domestic,Under 25,Business,1,1
+S0067,Domestic,Under 25,Business,1,1
+S0068,Domestic,Under 25,Business,1,1
+S0069,Domestic,Under 25,Education,1,1
+S0070,Domestic,25+,Education,0,1
+S0071,Domestic,25+,Engineering,0,1
+S0072,Domestic,Under 25,Education,1,1
+S0073,Domestic,25+,Education,1,1
+S0074,Domestic,25+,Engineering,1,1
+S0075,Domestic,25+,Engineering,1,1
+S0076,Domestic,25+,Engineering,1,1
+S0077,Domestic,25+,Education,1,1
+S0078,Domestic,Under 25,Education,,1
+S0079,Domestic,25+,Business,1,1
+S0080,Domestic,25+,Education,1,1
+S0081,Domestic,Under 25,Business,1,1
+S0082,Domestic,Under 25,Business,1,1
+S0083,Domestic,25+,Business,1,1
+S0084,Domestic,25+,Engineering,1,1
+S0085,Domestic,Under 25,Business,1,1
+S0086,Domestic,Under 25,Education,1,1
+S0087,Domestic,Under 25,Engineering,1,1
+S0088,Domestic,25+,Engineering,0,1
+S0089,Domestic,25+,Business,1,1
+S0090,Domestic,Under 25,Business,1,1
+S0091,Domestic,25+,Business,,1
+S0092,Domestic,Under 25,Business,1,1
+S0093,Domestic,25+,Engineering,1,1
+S0094,Domestic,25+,Business,0,1
+S0095,Domestic,Under 25,Education,1,1
+S0096,Domestic,25+,Engineering,0,1
+S0097,Domestic,25+,Engineering,0,1
+S0098,Domestic,Under 25,Engineering,1,1
+S0099,Domestic,25+,Education,1,1
+S0100,Domestic,25+,Business,0,1
+S0101,Domestic,25+,Engineering,0,1
+S0102,Domestic,25+,Education,1,1
+S0103,Domestic,25+,Education,1,1
+S0104,Domestic,Under 25,Engineering,,1
+S0105,Domestic,Under 25,Business,1,1
+S0106,Domestic,Under 25,Business,1,1
+S0107,Domestic,25+,Education,0,1
+S0108,Domestic,Under 25,Engineering,0,1
+S0109,Domestic,Under 25,Education,1,1
+S0110,Domestic,25+,Education,1,1
+S0111,Domestic,25+,Business,0,1
+S0112,Domestic,Under 25,Education,1,1
+S0113,Domestic,25+,Engineering,1,1
+S0114,Domestic,Under 25,Business,1,1
+S0115,Domestic,Under 25,Business,1,1
+S0116,Domestic,Under 25,Business,1,1
+S0117,Domestic,Under 25,Education,,1
+S0118,Domestic,Under 25,Education,1,1
+S0119,Domestic,Under 25,Engineering,0,1
+S0120,Domestic,25+,Business,1,1
+S0121,Domestic,Under 25,Engineering,1,1
+S0122,Domestic,Under 25,Engineering,1,1
+S0123,Domestic,Under 25,Education,1,1
+S0124,Domestic,25+,Business,0,1
+S0125,Domestic,Under 25,Business,0,1
+S0126,Domestic,25+,Engineering,1,1
+S0127,Domestic,25+,Engineering,1,1
+S0128,Domestic,25+,Engineering,0,1
+S0129,Domestic,25+,Business,1,1
+S0130,Domestic,25+,Education,,1
+S0131,Domestic,Under 25,Business,1,1
+S0132,Domestic,Under 25,Education,1,1
+S0133,Domestic,Under 25,Education,1,1
+S0134,Domestic,Under 25,Business,1,1
+S0135,Domestic,25+,Engineering,1,1
+S0136,Domestic,25+,Business,1,1
+S0137,Domestic,Under 25,Engineering,1,1
+S0138,Domestic,Under 25,Business,1,1
+S0139,Domestic,25+,Engineering,1,1
+S0140,Domestic,25+,Business,1,1
+S0141,Domestic,Under 25,Engineering,1,1
+S0142,Domestic,25+,Business,0,1
+S0143,Domestic,Under 25,Education,,1
+S0144,Domestic,Under 25,Business,1,1
+S0145,Domestic,25+,Engineering,1,1
+S0146,Domestic,Under 25,Engineering,1,1
+S0147,Domestic,Under 25,Business,1,1
+S0148,Domestic,Under 25,Engineering,1,1
+S0149,Domestic,Under 25,Engineering,0,1
+S0150,Domestic,Under 25,Business,1,1
+S0151,Domestic,Under 25,Education,1,1
+S0152,Domestic,25+,Engineering,1,1
+S0153,Domestic,25+,Education,1,1
+S0154,Domestic,25+,Engineering,1,1
+S0155,Domestic,25+,Education,1,1
+S0156,Domestic,Under 25,Engineering,,1
+S0157,Domestic,25+,Business,1,1
+S0158,Domestic,25+,Business,1,1
+S0159,Domestic,Under 25,Engineering,1,1
+S0160,Domestic,25+,Engineering,1,1
+S0161,Domestic,Under 25,Engineering,1,1
+S0162,Domestic,25+,Engineering,0,1
+S0163,Domestic,Under 25,Education,1,1
+S0164,Domestic,25+,Education,1,1
+S0165,Domestic,Under 25,Education,1,1
+S0166,Domestic,25+,Education,1,1
+S0167,Domestic,Under 25,Education,1,1
+S0168,Domestic,Under 25,Business,1,1
+S0169,Domestic,Under 25,Engineering,,1
+S0170,Domestic,25+,Education,1,1
+S0171,Domestic,Under 25,Engineering,1,1
+S0172,Domestic,Under 25,Education,1,1
+S0173,Domestic,25+,Engineering,1,1
+S0174,Domestic,25+,Education,0,1
+S0175,Domestic,Under 25,Engineering,0,1
+S0176,Domestic,25+,Business,1,1
+S0177,Domestic,Under 25,Business,1,1
+S0178,Domestic,Under 25,Engineering,0,1
+S0179,Domestic,25+,Business,1,1
+S0180,Domestic,25+,Business,1,1
+S0181,Domestic,Under 25,Business,0,1
+S0182,Domestic,25+,Engineering,,1
+S0183,Domestic,25+,Business,1,1
+S0184,Domestic,25+,Education,1,1
+S0185,Domestic,25+,Education,1,1
+S0186,Domestic,Under 25,Education,1,1
+S0187,Domestic,Under 25,Engineering,1,1
+S0188,Domestic,Under 25,Education,0,1
+S0189,Domestic,25+,Engineering,0,1
+S0190,Domestic,Under 25,Business,1,1
+S0191,Domestic,Under 25,Education,1,1
+S0192,Domestic,Under 25,Business,1,1
+S0193,Domestic,Under 25,Engineering,1,1
+S0194,Domestic,Under 25,Engineering,1,1
+S0195,Domestic,25+,Business,,1
+S0196,Domestic,Under 25,Business,1,1
+S0197,Domestic,Under 25,Education,1,1
+S0198,Domestic,Under 25,Education,1,1
+S0199,Domestic,25+,Engineering,1,1
+S0200,Domestic,25+,Business,0,1
+S0201,Domestic,Under 25,Education,1,1
+S0202,Domestic,Under 25,Education,1,1
+S0203,Domestic,Under 25,Education,0,1
+S0204,Domestic,25+,Business,1,1
+S0205,Domestic,25+,Business,0,1
+S0206,Domestic,Under 25,Engineering,1,1
+S0207,Domestic,25+,Education,0,1
+S0208,Domestic,Under 25,Education,,1
+S0209,Domestic,25+,Business,1,1
+S0210,Domestic,Under 25,Education,1,1
+S0211,Domestic,25+,Business,1,1
+S0212,Domestic,Under 25,Education,1,1
+S0213,Domestic,Under 25,Education,1,1
+S0214,Domestic,Under 25,Education,0,1
+S0215,Domestic,25+,Business,1,1
+S0216,Domestic,25+,Engineering,0,1
+S0217,Domestic,Under 25,Engineering,1,1
+S0218,Domestic,Under 25,Business,1,1
+S0219,Domestic,Under 25,Business,1,1
+S0220,Domestic,Under 25,Business,1,1
+S0221,Domestic,25+,Business,,1
+S0222,Domestic,25+,Business,1,1
+S0223,Domestic,25+,Education,0,1
+S0224,Domestic,25+,Education,1,1
+S0225,Domestic,Under 25,Engineering,1,1
+S0226,Domestic,Under 25,Education,1,1
+S0227,Domestic,Under 25,Business,1,1
+S0228,Domestic,Under 25,Business,1,1
+S0229,Domestic,25+,Engineering,1,1
+S0230,Domestic,Under 25,Education,1,1
+S0231,Domestic,25+,Business,1,1
+S0232,Domestic,Under 25,Business,0,1
+S0233,Domestic,Under 25,Business,1,1
+S0234,Domestic,Under 25,Business,,1
+S0235,Domestic,25+,Engineering,0,1
+S0236,Domestic,Under 25,Business,1,1
+S0237,Domestic,25+,Engineering,0,1
+S0238,Domestic,25+,Engineering,1,1
+S0239,Domestic,Under 25,Education,1,1
+S0240,Domestic,25+,Education,1,1
+S0241,Domestic,25+,Business,0,1
+S0242,Domestic,25+,Education,0,1
+S0243,Domestic,Under 25,Engineering,1,1
+S0244,Domestic,25+,Engineering,1,1
+S0245,Domestic,Under 25,Business,1,1
+S0246,Domestic,Under 25,Education,1,1
+S0247,Domestic,25+,Business,,1
+S0248,Domestic,25+,Education,0,1
+S0249,Domestic,Under 25,Education,1,1
+S0250,Domestic,Under 25,Education,1,1
+S0251,Domestic,25+,Engineering,1,1
+S0252,Domestic,Under 25,Business,1,1
+S0253,Domestic,25+,Engineering,1,1
+S0254,Domestic,25+,Business,0,1
+S0255,Domestic,Under 25,Engineering,1,1
+S0256,Domestic,Under 25,Business,0,1
+S0257,Domestic,Under 25,Education,1,1
+S0258,Domestic,25+,Business,1,1
+S0259,Domestic,25+,Engineering,1,1
+S0260,Domestic,Under 25,Engineering,,1
+S0261,Domestic,Under 25,Education,1,1
+S0262,Domestic,25+,Engineering,1,1
+S0263,Domestic,Under 25,Engineering,1,1
+S0264,Domestic,Under 25,Education,1,1
+S0265,Domestic,Under 25,Engineering,1,1
+S0266,Domestic,25+,Business,1,1
+S0267,Domestic,Under 25,Education,1,1
+S0268,Domestic,25+,Education,1,1
+S0269,Domestic,25+,Engineering,1,1
+S0270,Domestic,Under 25,Education,1,1
+S0271,Domestic,Under 25,Education,0,1
+S0272,Domestic,25+,Engineering,0,1
+S0273,Domestic,Under 25,Business,,1
+S0274,Domestic,Under 25,Business,1,1
+S0275,Domestic,Under 25,Engineering,1,1
+S0276,Domestic,Under 25,Engineering,1,1
+S0277,Domestic,25+,Business,0,1
+S0278,Domestic,Under 25,Engineering,1,1
+S0279,Domestic,Under 25,Engineering,0,1
+S0280,Domestic,Under 25,Business,1,1
+S0281,Domestic,Under 25,Engineering,0,1
+S0282,Domestic,Under 25,Education,1,1
+S0283,Domestic,25+,Education,0,1
+S0284,Domestic,Under 25,Education,1,1
+S0285,Domestic,25+,Business,0,1
+S0286,Domestic,Under 25,Education,,1
+S0287,Domestic,Under 25,Business,1,1
+S0288,Domestic,Under 25,Education,1,1
+S0289,Domestic,25+,Education,1,1
+S0290,Domestic,Under 25,Business,1,1
+S0291,Domestic,25+,Engineering,1,1
+S0292,Domestic,25+,Education,1,1
+S0293,Domestic,Under 25,Engineering,1,1
+S0294,Domestic,25+,Education,1,1
+S0295,Domestic,25+,Business,0,1
+S0296,Domestic,Under 25,Engineering,1,1
+S0297,Domestic,Under 25,Education,1,1
+S0298,Domestic,25+,Business,1,1
+S0299,Domestic,25+,Engineering,,1
+S0300,Domestic,Under 25,Engineering,1,1
+S0301,Domestic,Under 25,Business,1,1
+S0302,Domestic,Under 25,Engineering,0,1
+S0303,Domestic,25+,Education,1,1
+S0304,Domestic,Under 25,Business,1,1
+S0305,Domestic,25+,Engineering,1,1
+S0306,Domestic,Under 25,Business,1,1
+S0307,Domestic,Under 25,Business,1,1
+S0308,Domestic,Under 25,Education,1,1
+S0309,Domestic,25+,Business,0,1
+S0310,Domestic,25+,Engineering,1,1
+S0311,Domestic,Under 25,Business,1,1
+S0312,Domestic,25+,Engineering,,1
+S0313,Domestic,Under 25,Business,1,1
+S0314,Domestic,25+,Education,1,1
+S0315,Domestic,Under 25,Business,1,1
+S0316,Domestic,Under 25,Engineering,0,1
+S0317,Domestic,25+,Business,0,1
+S0318,Domestic,25+,Engineering,0,1
+S0319,Domestic,Under 25,Education,1,1
+S0320,Domestic,Under 25,Engineering,1,1
+S0321,Domestic,Under 25,Business,1,1
+S0322,Domestic,Under 25,Education,1,1
+S0323,Domestic,Under 25,Education,0,1
+S0324,Domestic,Under 25,Business,1,1
+S0325,Domestic,25+,Engineering,,1
+S0326,Domestic,25+,Engineering,1,1
+S0327,Domestic,25+,Engineering,1,1
+S0328,Domestic,25+,Engineering,1,1
+S0329,Domestic,Under 25,Education,1,1
+S0330,Domestic,Under 25,Engineering,1,1
+S0331,Domestic,25+,Business,1,1
+S0332,Domestic,25+,Engineering,0,1
+S0333,Domestic,25+,Engineering,1,1
+S0334,Domestic,Under 25,Business,1,1
+S0335,Domestic,Under 25,Education,1,1
+S0336,Domestic,Under 25,Business,1,1
+S0337,Domestic,Under 25,Engineering,1,1
+S0338,Domestic,25+,Education,,1
+S0339,Domestic,Under 25,Engineering,1,1
+S0340,Domestic,25+,Engineering,0,1
+S0341,Domestic,Under 25,Education,1,1
+S0342,Domestic,Under 25,Education,1,1
+S0343,Domestic,Under 25,Business,1,1
+S0344,Domestic,Under 25,Education,1,1
+S0345,Domestic,Under 25,Business,1,1
+S0346,Domestic,25+,Engineering,1,1
+S0347,Domestic,Under 25,Education,0,1
+S0348,Domestic,Under 25,Business,1,1
+S0349,Domestic,25+,Education,0,1
+S0350,Domestic,Under 25,Business,1,1
+S0351,Domestic,25+,Business,,1
+S0352,Domestic,Under 25,Engineering,1,1
+S0353,Domestic,Under 25,Engineering,1,1
+S0354,Domestic,Under 25,Business,1,1
+S0355,Domestic,25+,Education,1,1
+S0356,Domestic,Under 25,Education,0,1
+S0357,Domestic,25+,Engineering,1,1
+S0358,Domestic,25+,Education,0,1
+S0359,Domestic,Under 25,Education,1,1
+S0360,Domestic,25+,Engineering,1,1
+S0361,Domestic,Under 25,Business,1,1
+S0362,Domestic,Under 25,Education,1,1
+S0363,Domestic,25+,Engineering,1,1
+S0364,Domestic,Under 25,Business,,1
+S0365,Domestic,Under 25,Education,1,1
+S0366,Domestic,25+,Engineering,1,1
+S0367,Domestic,Under 25,Business,1,1
+S0368,Domestic,Under 25,Education,1,1
+S0369,Domestic,Under 25,Business,1,1
+S0370,Domestic,25+,Business,1,1
+S0371,Domestic,25+,Education,1,1
+S0372,Domestic,Under 25,Business,1,1
+S0373,Domestic,25+,Education,1,1
+S0374,Domestic,25+,Education,0,1
+S0375,Domestic,25+,Education,1,1
+S0376,Domestic,Under 25,Education,1,1
+S0377,Domestic,25+,Education,,1
+S0378,Domestic,Under 25,Education,1,1
+S0379,Domestic,25+,Education,1,1
+S0380,Domestic,Under 25,Business,1,1
+S0381,Domestic,Under 25,Education,1,1
+S0382,Domestic,25+,Engineering,1,1
+S0383,Domestic,25+,Business,1,1
+S0384,Domestic,25+,Business,1,1
+S0385,Domestic,25+,Education,1,1
+S0386,Domestic,Under 25,Business,0,1
+S0387,Domestic,25+,Engineering,1,1
+S0388,Domestic,25+,Education,0,1
+S0389,Domestic,Under 25,Business,1,1
+S0390,Domestic,25+,Engineering,,1
+S0391,Domestic,25+,Business,0,1
+S0392,Domestic,25+,Engineering,0,1
+S0393,Domestic,Under 25,Business,1,1
+S0394,Domestic,Under 25,Business,1,1
+S0395,Domestic,Under 25,Education,1,1
+S0396,Domestic,Under 25,Education,1,1
+S0397,Domestic,Under 25,Education,1,1
+S0398,Domestic,Under 25,Business,1,1
+S0399,Domestic,25+,Engineering,1,1
+S0400,International,25+,Education,1,1
+S0401,International,25+,Engineering,1,1
+S0402,International,25+,Education,1,1
+S0403,International,Under 25,Business,,1
+S0404,International,25+,Engineering,1,1
+S0405,International,Under 25,Education,1,1
+S0406,International,Under 25,Education,0,1
+S0407,International,25+,Engineering,1,1
+S0408,International,Under 25,Business,1,1
+S0409,International,25+,Business,0,1
+S0410,International,Under 25,Business,1,1
+S0411,International,Under 25,Education,1,1
+S0412,International,Under 25,Education,1,1
+S0413,International,Under 25,Education,1,1
+S0414,International,Under 25,Business,0,1
+S0415,International,Under 25,Business,1,1
+S0416,International,Under 25,Engineering,,1
+S0417,International,Under 25,Education,1,1
+S0418,International,Under 25,Business,1,1
+S0419,International,Under 25,Education,1,1
+S0420,International,Under 25,Business,1,1
+S0421,International,Under 25,Engineering,1,1
+S0422,International,Under 25,Business,1,1
+S0423,International,Under 25,Engineering,1,1
+S0424,International,Under 25,Business,1,1
+S0425,International,Under 25,Engineering,1,1
+S0426,International,25+,Business,1,1
+S0427,International,Under 25,Business,1,1
+S0428,International,Under 25,Education,1,1
+S0429,International,Under 25,Education,,1
+S0430,International,Under 25,Business,1,1
+S0431,International,Under 25,Engineering,1,1
+S0432,International,Under 25,Education,0,1
+S0433,International,Under 25,Education,1,1
+S0434,International,Under 25,Education,1,1
+S0435,International,Under 25,Business,1,1
+S0436,International,Under 25,Education,1,1
+S0437,International,Under 25,Education,0,1
+S0438,International,Under 25,Business,1,1
+S0439,International,Under 25,Business,1,1
+S0440,International,Under 25,Engineering,0,1
+S0441,International,25+,Education,1,1
+S0442,International,Under 25,Engineering,,1
+S0443,International,Under 25,Education,1,1
+S0444,International,Under 25,Business,0,1
+S0445,International,Under 25,Engineering,1,1
+S0446,International,25+,Business,0,1
+S0447,International,25+,Education,0,1
+S0448,International,Under 25,Engineering,0,1
+S0449,International,Under 25,Education,1,1
+S0450,International,Under 25,Business,1,1
+S0451,International,25+,Business,0,1
+S0452,International,Under 25,Engineering,1,1
+S0453,International,Under 25,Business,1,1
+S0454,International,Under 25,Engineering,1,1
+S0455,International,Under 25,Engineering,,1
+S0456,International,Under 25,Business,1,1
+S0457,International,Under 25,Engineering,1,1
+S0458,International,25+,Education,1,1
+S0459,International,Under 25,Education,1,1
+S0460,International,Under 25,Engineering,1,1
+S0461,International,Under 25,Education,0,1
+S0462,International,Under 25,Business,1,1
+S0463,International,Under 25,Education,1,1
+S0464,International,25+,Education,0,1
+S0465,International,25+,Business,0,1
+S0466,International,Under 25,Education,1,1
+S0467,International,Under 25,Business,1,1
+S0468,International,25+,Business,,1
+S0469,International,Under 25,Education,1,1
+S0470,International,Under 25,Engineering,0,1
+S0471,International,Under 25,Engineering,1,1
+S0472,International,Under 25,Business,1,1
+S0473,International,25+,Engineering,0,1
+S0474,International,Under 25,Engineering,1,1
+S0475,International,Under 25,Business,1,1
+S0476,International,Under 25,Education,0,1
+S0477,International,Under 25,Education,1,1
+S0478,International,25+,Education,1,1
+S0479,International,Under 25,Business,1,1
+S0480,International,Under 25,Business,0,1
+S0481,International,Under 25,Education,,1
+S0482,International,25+,Education,0,1
+S0483,International,25+,Education,1,1
+S0484,International,Under 25,Business,1,1
+S0485,International,Under 25,Engineering,1,1
+S0486,International,Under 25,Education,1,1
+S0487,International,Under 25,Engineering,1,1
+S0488,International,25+,Education,1,1
+S0489,International,Under 25,Business,1,1
+S0490,International,Under 25,Education,1,1
+S0491,International,25+,Engineering,1,1
+S0492,International,Under 25,Business,1,1
+S0493,International,Under 25,Engineering,1,1
+S0494,International,Under 25,Engineering,,1
+S0495,International,25+,Education,0,1
+S0496,International,25+,Business,1,1
+S0497,International,Under 25,Education,0,1
+S0498,International,Under 25,Engineering,1,1
+S0499,International,25+,Business,1,1
+S0500,International,Under 25,Engineering,1,1
+S0501,International,Under 25,Engineering,1,1
+S0502,International,Under 25,Engineering,1,1
+S0503,International,Under 25,Education,1,1
+S0504,International,Under 25,Business,0,1
+S0505,International,Under 25,Engineering,1,1
+S0506,International,Under 25,Education,0,1
+S0507,International,Under 25,Business,,1
+S0508,International,Under 25,Education,1,1
+S0509,International,Under 25,Business,0,1
+S0510,International,25+,Engineering,1,1
+S0511,International,Under 25,Engineering,1,1
+S0512,International,Under 25,Engineering,1,1
+S0513,International,Under 25,Engineering,1,1
+S0514,International,Under 25,Education,1,1
+S0515,International,25+,Business,1,1
+S0516,International,Under 25,Education,0,1
+S0517,International,Under 25,Engineering,1,1
+S0518,International,25+,Business,1,1
+S0519,International,Under 25,Business,1,1
+S0520,International,25+,Education,,1
+S0521,International,Under 25,Engineering,1,1
+S0522,International,25+,Education,1,1
+S0523,International,Under 25,Engineering,0,1
+S0524,International,Under 25,Business,1,1
+S0525,International,25+,Business,1,1
+S0526,International,25+,Engineering,0,1
+S0527,International,Under 25,Business,1,1
+S0528,International,Under 25,Engineering,1,1
+S0529,International,Under 25,Business,1,1
+S0530,International,Under 25,Education,1,1
+S0531,International,Under 25,Business,1,1
+S0532,International,Under 25,Education,1,1
+S0533,International,Under 25,Engineering,,1
+S0534,International,Under 25,Engineering,1,1
+S0535,International,Under 25,Engineering,1,1
+S0536,International,25+,Engineering,0,1
+S0537,International,Under 25,Engineering,1,1
+S0538,International,Under 25,Engineering,1,1
+S0539,International,25+,Business,1,1
+S0540,International,25+,Business,1,1
+S0541,International,25+,Education,1,1
+S0542,International,Under 25,Business,1,1
+S0543,International,Under 25,Education,1,1
+S0544,International,Under 25,Engineering,1,1
+S0545,International,Under 25,Education,1,1
+S0546,International,Under 25,Engineering,,1
+S0547,International,25+,Education,0,1
+S0548,International,Under 25,Education,1,1
+S0549,International,Under 25,Engineering,1,1
+S0550,International,25+,Business,1,1
+S0551,International,Under 25,Education,1,1
+S0552,International,Under 25,Engineering,1,1
+S0553,International,Under 25,Engineering,1,1
+S0554,International,25+,Business,1,1
+S0555,International,25+,Engineering,1,1
+S0556,International,Under 25,Engineering,1,1
+S0557,International,Under 25,Business,1,1
+S0558,International,Under 25,Business,1,1
+S0559,International,25+,Engineering,,1
+S0560,International,Under 25,Education,1,1
+S0561,International,Under 25,Engineering,0,1
+S0562,International,Under 25,Education,1,1
+S0563,International,Under 25,Business,0,1
+S0564,International,25+,Engineering,1,1
+S0565,International,Under 25,Education,1,1
+S0566,International,Under 25,Business,1,1
+S0567,International,Under 25,Business,1,1
+S0568,International,25+,Education,1,1
+S0569,International,Under 25,Business,1,1
+S0570,International,25+,Engineering,1,1
+S0571,International,Under 25,Education,0,1
+S0572,International,Under 25,Education,,1
+S0573,International,Under 25,Business,1,1
+S0574,International,Under 25,Engineering,1,1
+S0575,International,Under 25,Business,1,1
+S0576,International,25+,Business,1,1
+S0577,International,25+,Education,0,1
+S0578,International,25+,Engineering,1,1
+S0579,International,Under 25,Education,1,1
+S0580,International,25+,Engineering,1,1
+S0581,International,Under 25,Engineering,0,1
+S0582,International,25+,Engineering,1,1
+S0583,International,Under 25,Business,1,1
+S0584,International,Under 25,Business,1,1
+S0585,International,25+,Education,,1
+S0586,International,Under 25,Education,0,1
+S0587,International,25+,Education,1,1
+S0588,International,Under 25,Business,1,1
+S0589,International,Under 25,Business,1,1
+S0590,International,25+,Business,1,1
+S0591,International,Under 25,Business,1,1
+S0592,International,Under 25,Business,1,1
+S0593,International,25+,Education,0,1
+S0594,International,Under 25,Business,1,1
+S0595,International,Under 25,Engineering,1,1
+S0596,International,Under 25,Engineering,1,1
+S0597,International,Under 25,Business,1,1
+S0598,International,Under 25,Education,,1
+S0599,International,25+,Education,0,1
+S0600,International,Under 25,Education,1,1
+S0601,International,Under 25,Education,0,1
+S0602,International,Under 25,Business,0,1
+S0603,International,Under 25,Engineering,1,1
+S0604,International,25+,Education,0,1
+S0605,International,25+,Business,1,1
+S0606,International,25+,Engineering,1,1
+S0607,International,Under 25,Education,0,1
+S0608,International,Under 25,Engineering,1,1
+S0609,International,Under 25,Business,0,1
+S0610,International,Under 25,Engineering,1,1
+S0611,International,25+,Business,,1
+S0612,International,25+,Education,1,1
+S0613,International,Under 25,Engineering,1,1
+S0614,International,Under 25,Business,1,1
+S0615,International,Under 25,Education,1,1
+S0616,International,Under 25,Education,0,1
+S0617,International,Under 25,Engineering,1,1
+S0618,International,Under 25,Engineering,1,1
+S0619,International,Under 25,Education,1,1
+S0620,International,25+,Business,1,1
+S0621,International,Under 25,Education,1,1
+S0622,International,Under 25,Business,0,1
+S0623,International,Under 25,Business,1,1
+S0624,International,Under 25,Business,,1
+S0625,International,Under 25,Business,1,1
+S0626,International,25+,Business,1,1
+S0627,International,Under 25,Business,1,1
+S0628,International,Under 25,Education,0,1
+S0629,International,Under 25,Business,0,1
+S0630,International,Under 25,Business,1,1
+S0631,International,Under 25,Engineering,0,1
+S0632,International,Under 25,Engineering,1,1
+S0633,International,Under 25,Engineering,1,1
+S0634,International,25+,Business,0,1
+S0635,International,Under 25,Education,1,1
+S0636,International,Under 25,Engineering,1,1
+S0637,International,Under 25,Engineering,,1
+S0638,International,25+,Business,1,1
+S0639,International,Under 25,Education,0,1
+S0640,International,Under 25,Business,0,1
+S0641,International,Under 25,Engineering,0,1
+S0642,International,Under 25,Business,1,1
+S0643,International,Under 25,Engineering,1,1
+S0644,International,Under 25,Business,1,1
+S0645,International,Under 25,Engineering,1,1
+S0646,International,Under 25,Engineering,1,1
+S0647,International,25+,Engineering,1,1
+S0648,International,Under 25,Education,1,1
+S0649,International,Under 25,Education,0,1
+S0650,International,25+,Business,,1
+S0651,International,Under 25,Engineering,1,1
+S0652,International,25+,Engineering,1,1
+S0653,International,Under 25,Business,0,1
+S0654,International,Under 25,Education,1,1
+S0655,International,25+,Business,1,1
+S0656,International,Under 25,Engineering,1,1
+S0657,International,Under 25,Education,1,1
+S0658,International,Under 25,Business,1,1
+S0659,International,25+,Business,1,1
+S0660,International,Under 25,Engineering,1,1
+S0661,International,25+,Business,1,1
+S0662,International,25+,Business,1,1
+S0663,International,Under 25,Business,,1
+S0664,International,Under 25,Engineering,1,1
+S0665,International,Under 25,Engineering,1,1
+S0666,International,25+,Business,0,1
+S0667,International,Under 25,Education,1,1
+S0668,International,Under 25,Engineering,0,1
+S0669,International,Under 25,Engineering,1,1
+S0670,International,Under 25,Business,1,1
+S0671,International,Under 25,Education,1,1
+S0672,International,25+,Business,1,1
+S0673,International,Under 25,Education,1,1
+S0674,International,Under 25,Business,1,1
+S0675,International,Under 25,Education,1,1
+S0676,International,Under 25,Education,,1
+S0677,International,Under 25,Education,1,1
+S0678,International,Under 25,Business,1,1
+S0679,International,Under 25,Engineering,1,1
+S0680,International,Under 25,Engineering,1,1
+S0681,International,25+,Engineering,1,1
+S0682,International,Under 25,Engineering,0,1
+S0683,International,25+,Business,1,1
+S0684,International,25+,Business,0,1
+S0685,International,25+,Engineering,1,1
+S0686,International,Under 25,Business,1,1
+S0687,International,25+,Engineering,1,1
+S0688,International,Under 25,Education,1,1
+S0689,International,Under 25,Engineering,,1
+S0690,International,25+,Engineering,1,1
+S0691,International,Under 25,Business,1,1
+S0692,International,Under 25,Business,1,1
+S0693,International,Under 25,Education,0,1
+S0694,International,Under 25,Education,0,1
+S0695,International,25+,Education,1,1
+S0696,International,Under 25,Business,1,1
+S0697,International,Under 25,Engineering,0,1
+S0698,International,Under 25,Engineering,1,1
+S0699,International,25+,Education,0,1
+S0700,International,Under 25,Education,1,1
+S0701,International,Under 25,Engineering,0,1
+S0702,International,25+,Engineering,,1
+S0703,International,Under 25,Business,1,1
+S0704,International,Under 25,Business,1,1
+S0705,International,25+,Engineering,1,1
+S0706,International,25+,Education,0,1
+S0707,International,Under 25,Education,1,1
+S0708,International,25+,Business,1,1
+S0709,International,Under 25,Business,1,1
+S0710,International,Under 25,Engineering,1,1
+S0711,International,Under 25,Education,1,1
+S0712,International,Under 25,Engineering,1,1
+S0713,International,Under 25,Business,0,1
+S0714,International,25+,Education,1,1
+S0715,International,Under 25,Education,,1
+S0716,International,Under 25,Engineering,1,1
+S0717,International,25+,Education,1,1
+S0718,International,Under 25,Business,0,1
+S0719,International,Under 25,Engineering,1,1
+S0720,International,Under 25,Education,1,1
+S0721,International,Under 25,Business,1,1
+S0722,International,25+,Engineering,0,1
+S0723,International,Under 25,Business,1,1
+S0724,International,Under 25,Engineering,1,1
+S0725,International,Under 25,Engineering,1,1
+S0726,International,Under 25,Business,1,1
+S0727,International,Under 25,Engineering,1,1
+S0728,International,Under 25,Engineering,,1
+S0729,International,Under 25,Education,0,1
+S0730,International,Under 25,Business,1,1
+S0731,International,25+,Business,0,1
+S0732,International,Under 25,Education,1,1
+S0733,International,Under 25,Business,1,1
+S0734,International,Under 25,Engineering,1,1
+S0735,International,Under 25,Education,1,1
+S0736,International,25+,Business,0,1
+S0737,International,Under 25,Business,1,1
+S0738,International,Under 25,Education,1,1
+S0739,International,Under 25,Education,1,1
+S0740,International,Under 25,Engineering,1,1
+S0741,International,Under 25,Education,,1
+S0742,International,Under 25,Engineering,1,1
+S0743,International,Under 25,Engineering,0,1
+S0744,International,Under 25,Education,1,1
+S0745,International,Under 25,Business,1,1
+S0746,International,25+,Education,1,1
+S0747,International,25+,Education,0,1
+S0748,International,25+,Business,0,1
+S0749,International,Under 25,Education,1,1
+S0750,International,Under 25,Business,1,1
+S0751,International,Under 25,Engineering,1,1
+S0752,International,Under 25,Business,1,1
+S0753,International,Under 25,Engineering,0,1
+S0754,International,Under 25,Business,,1
+S0755,International,25+,Engineering,0,1
+S0756,International,Under 25,Business,1,1
+S0757,International,25+,Education,1,1
+S0758,International,Under 25,Education,1,1
+S0759,International,Under 25,Business,0,1
+S0760,International,Under 25,Education,1,1
+S0761,International,Under 25,Engineering,1,1
+S0762,International,Under 25,Business,0,1
+S0763,International,Under 25,Education,1,1
+S0764,International,Under 25,Education,1,1
+S0765,International,Under 25,Education,1,1
+S0766,International,25+,Business,1,1
+S0767,International,Under 25,Business,,1
+S0768,International,Under 25,Engineering,1,1
+S0769,International,Under 25,Business,1,1
+S0770,International,Under 25,Education,1,1
+S0771,International,Under 25,Education,1,1
+S0772,International,Under 25,Engineering,1,1
+S0773,International,Under 25,Engineering,0,1
+S0774,International,25+,Business,0,1
+S0775,International,25+,Engineering,1,1
+S0776,International,Under 25,Education,1,1
+S0777,International,25+,Engineering,1,1
+S0778,International,Under 25,Education,1,1
+S0779,International,25+,Business,1,1
+S0780,International,Under 25,Education,,1
+S0781,International,Under 25,Education,1,1
+S0782,International,25+,Education,1,1
+S0783,International,Under 25,Education,0,1
+S0784,International,Under 25,Engineering,0,1
+S0785,International,Under 25,Engineering,1,1
+S0786,International,Under 25,Engineering,1,1
+S0787,International,Under 25,Education,1,1
+S0788,International,Under 25,Engineering,0,1
+S0789,International,Under 25,Business,1,1
+S0790,International,25+,Business,1,1
+S0791,International,Under 25,Engineering,1,1
+S0792,International,Under 25,Engineering,1,1
+S0793,International,25+,Education,,1
+S0794,International,25+,Engineering,0,1
+S0795,International,Under 25,Business,1,1
+S0796,International,Under 25,Business,1,1
+S0797,International,Under 25,Education,1,1
+S0798,International,Under 25,Business,0,1
+S0799,International,25+,Engineering,1,1
+S0001,Domestic,Under 25,Education,1,1
+,Domestic,25+,Business,1,1

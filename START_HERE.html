@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Higher education outcomes practice lab</title>
+<style>
+body {font: 17px/1.6 system-ui, sans-serif; color: #152d3a; margin: 2.5rem auto; padding: 0 1.25rem; max-width: 55rem;}
+h1,h2 {line-height: 1.2; color: #123952;} h2 {margin-top: 2.3rem;}
+aside,pre {background: #eef5f7; padding: 1rem 1.25rem;} pre {overflow: auto;}
+table {border-collapse: collapse; width: 100%;} th,td {padding: .55rem .75rem; text-align: left; border-bottom: 1px solid #b9cacf;}
+th {background: #eef5f7;} a {color: #005675;}
+</style>
+</head>
+<body>
+<h1>Higher education outcomes practice lab</h1>
+<p>EL1 Data Analyst interview preparation · Azure Databricks, SQL, Python and GitHub Actions</p>
+<aside><strong>Your brief.</strong> Compare domestic and international student outcomes and explain what the evidence supports. All records and results in this project are synthetic. Agree on eligibility, access, linkage and disclosure rules with data custodians before using official data.</aside>
+
+<h2>1. Create the project area</h2>
+<ol>
+<li>Unzip the project. In your existing Azure Databricks Workspace, make a folder for the four notebooks. Import each <code>.py</code> file from <code>notebooks/</code> as a Databricks source notebook.</li>
+<li>Open <code>00_setup</code>, attach Python-capable compute with Unity Catalog access, and run its first cell to create the widgets. Set <code>catalog</code> to a writable catalog. For your earlier workspace this was <code>dbw_sales_iman01</code>. Keep <code>education_cohort_lab</code> as the schema and run all cells. If catalog validation errors on the initial run, set the widget and rerun.</li>
+<li>In Catalog Explorer, open your catalog, then <code>education_cohort_lab</code>, then the <code>incoming</code> volume. Upload the three CSVs from <code>data/</code> directly into that volume. The printed path should end with <code>/education_cohort_lab/incoming</code>.</li>
+</ol>
+<p>Workspace holds the notebook code. Compute runs it. The catalog and schema provide the names and access boundary for tables and volumes. The volume is where this project reads input files.</p>
+
+<h2>2. Run the ETL and verify a late correction</h2>
+<p>Use the same catalog and schema widgets in each notebook. Run <code>01_ingest</code> with <code>batch=1</code>, then run <code>02_transform_report</code>. Ingests are cumulative snapshot rebuilds in this lab. Keep a single writer and avoid overlapping runs or switching back to batch 1 after publishing batch 2.</p>
+<table>
+<tr><th>Stage</th><th>What happens</th></tr>
+<tr><td>Extract / Bronze</td><td>Read CSVs from the volume and write raw Delta tables. Bronze keeps duplicate deliveries.</td></tr>
+<tr><td>Transform / Silver</td><td>Quarantine the malformed student row, collapse identical deliveries, and select the latest valid revision. Conflicting latest student revisions and conflicting survey responses are excluded by the sample SQL. A real workflow should explicitly log and review conflicts before releasing results.</td></tr>
+<tr><td>Load / Gold</td><td>Build cohort and age-band counts for continuation, satisfaction and employment. A left join keeps students without survey responses in the eligible total. Rates divide positive outcomes by observed outcomes.</td></tr>
+</table>
+<p>Run the two notebooks again with <code>batch=2</code>. Then repeat batch 2 and compare results. In a SQL cell, replace <code>YOUR_CATALOG</code> with your catalog and run:</p>
+<pre>SELECT cohort, SUM(eligible) AS eligible,
+       SUM(observed) AS observed, SUM(positive) AS continued
+FROM YOUR_CATALOG.education_cohort_lab.gold_outcomes
+WHERE outcome = 'continuation'
+GROUP BY cohort
+ORDER BY cohort;</pre>
+<table>
+<tr><th>Run</th><th>Eligible total</th><th>Known continuation</th><th>Unknown continuation</th></tr>
+<tr><td>Batch 1</td><td>800</td><td>738</td><td>62</td></tr>
+<tr><td>Batch 2</td><td>800</td><td>769</td><td>31</td></tr>
+<tr><td>Repeat batch 2</td><td>800</td><td>769</td><td>31</td></tr>
+</table>
+
+<h2>3. Compare outcomes in Python</h2>
+<p>Run <code>03_analyse</code> after batch 2. It works from the small Gold summary and applies the same pooled age distribution to both cohorts. This helps you see how the comparison changes when the cohorts are given the same age mix. The gap is domestic minus international in percentage points.</p>
+<table>
+<tr><th>Outcome</th><th>Observed</th><th>Crude gap</th><th>Age-adjusted gap</th><th>Approximate 95% interval</th></tr>
+<tr><td>Continuation</td><td>769</td><td>2.40</td><td>4.79</td><td>−0.96 to 10.53</td></tr>
+<tr><td>Experience</td><td>479</td><td>6.94</td><td>6.74</td><td>−1.13 to 14.62</td></tr>
+<tr><td>Employment</td><td>274</td><td>15.62</td><td>15.43</td><td>4.28 to 26.58</td></tr>
+</table>
+<p>The lab treats everyone as survey-eligible to make missingness visible. Real employment analysis needs its own target population, eligibility and follow-up window. The approximate intervals treat the pooled age weights as fixed and responses as independent. P-values are individual and unadjusted for multiple comparisons. Real survey inference also needs the applicable design, weighting, clustering and nonresponse approach. Age adjustment alone cannot identify a causal effect.</p>
+<p>The notebook demonstrates a count-based disclosure screen with an arbitrary practice threshold of 10. Before any release, agree on the applicable rules and review linked tables and residual cells for possible disclosure.</p>
+
+<h2>4. Run the pipeline as a Databricks Job</h2>
+<p>In Lakeflow Jobs, create a job with these Notebook tasks, using the imported notebooks as their Workspace source:</p>
+<ol>
+<li><strong>Ingest</strong> → <code>01_ingest</code>. Pass <code>catalog</code>, <code>schema</code> and <code>batch=2</code>.</li>
+<li><strong>Transform and report</strong> → <code>02_transform_report</code>. Pass <code>catalog</code> and <code>schema</code>. Set it to depend on Ingest.</li>
+<li><strong>Analyse</strong> → <code>03_analyse</code>. Pass <code>catalog</code> and <code>schema</code>. Set it to depend on Transform and report.</li>
+</ol>
+<p>Use Python-capable compute that can access the lab schema and volume. Run on demand first and open the task outputs. The exercise uses static batch files. A schedule would repeat the selected batch until you provide new inputs and change how the batch is selected.</p>
+<p><a href="https://learn.microsoft.com/en-us/azure/databricks/jobs/tasks/notebook">Azure Databricks notebook task setup</a></p>
+
+<h2>5. Push to GitHub and inspect CI</h2>
+<p>Create an empty GitHub repository named <code>education-cohort-lab</code>. In a terminal opened at the extracted folder that contains this guide, run:</p>
+<pre>git init -b main
+git add .
+git commit -m "Add higher education cohort analysis lab"
+git remote add origin https://github.com/imanrahimii/education-cohort-lab.git
+git push -u origin main</pre>
+<p>In GitHub, open <strong>Actions → Education cohort analysis CI → test</strong>. Expand the test step and look for <code>Ran 5 tests</code> and <code>OK</code>. GitHub executes the shared reporting SQL against SQLite fixtures and tests the Python statistics and notebook syntax. Your Databricks Job executes the notebooks on Databricks compute and writes Delta tables. Check the results of both runs.</p>
+<p>For an interview demo, temporarily change <code>COUNT(result) AS observed</code> to <code>COUNT(*) AS observed</code> in <code>queries.py</code>. Run <code>python build.py</code> and then <code>python -m unittest discover -s tests -v</code> locally. Explain the failure, restore the original line and regenerate. The tests use Python 3.11 and the standard library.</p>
+
+<h2>6. Practise the interview briefing</h2>
+<dl>
+<dt><strong>Why did Monday's continuation rate change after the correction arrived?</strong></dt>
+<dd>The eligible population stayed at 800. We gained 31 known outcomes. I would record the reporting cutoff and batch used for each release, then reconcile the corrected results against the previous figures.</dd>
+<dt><strong>Can we brief the employment gap as a policy finding?</strong></dt>
+<dd>The synthetic respondent gap remains after age adjustment, but only 274 of 800 students have observed employment outcomes. I would check response patterns by cohort, confirm the target population and test whether the result is sensitive to plausible outcomes for nonrespondents before drawing a policy conclusion.</dd>
+<dt><strong>How would you deliver the work under deadline?</strong></dt>
+<dd>Agree on the questions, definitions and release rules at inception. Deliver validated cohort counts early, agree which comparisons go into the draft, and reserve review time for methodology, disclosure and policy wording.</dd>
+</dl>
+<p>Use <code>REPORT_EXAMPLE.md</code> to rehearse a one-minute answer. Then write your own brief with one result, one limitation, and one recommended action.</p>
+</body>
+</html>

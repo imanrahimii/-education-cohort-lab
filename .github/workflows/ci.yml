@@ -1,0 +1,18 @@
+name: Education cohort analysis CI
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Regenerate the notebooks and fixtures
+        run: |
+          python build.py
+          git diff --exit-code
+      - name: Test ETL, reporting and statistical logic
+        run: python -m unittest discover -s tests -v

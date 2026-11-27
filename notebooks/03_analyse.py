@@ -1,0 +1,65 @@
+# Databricks notebook source
+import re
+
+dbutils.widgets.text("catalog", "")
+dbutils.widgets.text("schema", "education_cohort_lab")
+catalog = dbutils.widgets.get("catalog")
+schema = dbutils.widgets.get("schema")
+if not all(re.fullmatch(r"[A-Za-z_][A-Za-z0-9_]*", name) for name in [catalog, schema]):
+    raise ValueError("Set catalog to a writable Unity Catalog catalog and use a simple schema name.")
+namespace = f"`{catalog}`.`{schema}`"
+
+def table(name):
+    return f"{namespace}.`{name}`"
+
+
+# COMMAND ----------
+
+"""Direct age standardisation with approximate inference for the synthetic lab."""
+from math import erfc, sqrt
+
+
+def standardised_gap(rows):
+    """Calculate domestic minus international in percentage points."""
+    by_group = {(row["cohort"], row["age_band"]): row for row in rows}
+    bands = sorted({row["age_band"] for row in rows})
+    cohorts = ("Domestic", "International")
+    population = sum(row["eligible"] for row in rows)
+    gap, variance = 0.0, 0.0
+    for band in bands:
+        paired = [by_group.get((cohort, band)) for cohort in cohorts]
+        if any(row is None or min(row["positive"], row["observed"] - row["positive"]) < 5 for row in paired):
+            raise ValueError(f"Insufficient observed counts in age band {band}.")
+        domestic, international = paired
+        weight = sum(row["eligible"] for row in paired) / population
+        rates = [row["positive"] / row["observed"] for row in paired]
+        gap += weight * (rates[0] - rates[1])
+        variance += weight**2 * sum(
+            rate * (1 - rate) / row["observed"]
+            for rate, row in zip(rates, (domestic, international))
+        )
+    if not bands:
+        raise ValueError("No cohort data.")
+    se = sqrt(variance)
+    crude = []
+    for cohort in cohorts:
+        group = [row for row in rows if row["cohort"] == cohort]
+        crude.append(sum(row["positive"] for row in group) / sum(row["observed"] for row in group))
+    return {
+        "crude_gap_pp": round(100 * (crude[0] - crude[1]), 2),
+        "adjusted_gap_pp": round(100 * gap, 2),
+        "ci95_pp": [round(100 * bound, 2) for bound in (gap - 1.96 * se, gap + 1.96 * se)],
+        "p_value_unadjusted": erfc(abs(gap) / (sqrt(2) * se)),
+    }
+
+
+# COMMAND ----------
+
+rows = [row.asDict() for row in spark.table(table("gold_outcomes")).collect()]
+for outcome in ("continuation", "experience", "employment"):
+    print(outcome, standardised_gap([row for row in rows if row["outcome"] == outcome]))
+
+# This is a first disclosure check. Before release, also review complementary
+# suppression and what readers could infer across tables and repeated releases.
+display(spark.table(table("gold_outcomes")).where("eligible >= 10 AND observed >= 10 AND positive >= 10 AND observed - positive >= 10"))
+
