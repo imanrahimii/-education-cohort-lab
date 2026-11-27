@@ -8,7 +8,7 @@ ROOT = Path(__file__).parent
 
 def write_csv(name, header, rows):
     with (ROOT / "data" / name).open("w", newline="") as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file, lineterminator="\n")
         writer.writerow(header.split(","))
         writer.writerows(rows)
 
